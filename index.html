@@ -1,18 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧊</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yousef Tamer | 3D Portfolio</title>
-    <meta name="description" content="Yousef Tamer, front-end developer. An interactive 3D portfolio." />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="./images1.js"></script>
-    <script src="./images2.js"></script>
-    <script src="./images3.js"></script>
-    <script type="module" src="./app.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yousef Tamer, Front-End Developer</title>
+<meta name="description" content="Yousef Tamer is a front-end developer based in Egypt, crafting clean, scalable and modern web applications.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav-mark" href="#top"><span class="nav-logo">YT</span> Yousef Tamer</a>
+  <nav class="nav-links">
+    <a href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <canvas id="net" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <p class="hero-hi">Hi, I'm Yousef Tamer</p>
+      <h1 class="hero-title">Front-End <span>Developer</span></h1>
+      <p class="hero-line">I build clean, scalable web interfaces with care for the details. Based in Egypt.</p>
+      <div class="hero-actions">
+        <a class="btn btn-blue" href="#projects">My Projects</a>
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="hero-tower.jpg" alt="Yousef Tamer" width="825" height="1100">
+    </figure>
+  </section>
+
+  <!-- About + Skills -->
+  <section id="about" class="section">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Front-end developer crafting clean, scalable and modern web applications. Completed Front-End development training at Route Academy. Software engineering student at EELU, based in Egypt.</p>
+        <ul class="about-facts">
+          <li><span>Focus</span>Front-end development</li>
+          <li><span>Training</span>Route Academy, Front-End</li>
+          <li><span>Studies</span>Software engineering, EELU</li>
+          <li><span>Based in</span>Egypt</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3 class="col-title">My Skills</h3>
+        <p class="skill-group">Core</p>
+        <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li></ul>
+        <p class="skill-group">Frameworks</p>
+        <ul class="chips"><li>Angular</li><li>React</li><li>Next.js</li></ul>
+        <p class="skill-group">Styling and Tools</p>
+        <ul class="chips"><li>Bootstrap</li><li>Git</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects" id="projectsGrid"></div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="section">
+    <h2 class="section-title">My <span>Events</span></h2>
+    <div class="events">
+      <article class="event-card">
+        <div class="event-photos">
+          <img src="ev-egypt-forum-1.jpg" alt="Yousef at Egypt Forum 2026" loading="lazy">
+          <img src="ev-egypt-forum-2.jpg" alt="Egypt Forum 2026" loading="lazy">
+          <img src="ev-egypt-forum-3.jpg" alt="Egypt Forum 2026 venue" loading="lazy">
+          <img src="ev-egypt-forum-4.jpg" alt="Egypt Forum 2026 session" loading="lazy">
+        </div>
+        <div class="event-body">
+          <p class="event-date">Shared October 2026</p>
+          <h3 class="event-name">Egypt Forum 2026</h3>
+          <p class="event-blurb">Attended Egypt Forum 2026: a day of learning, exchanging ideas and hearing different experiences and perspectives.</p>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-photos">
+          <img src="ev-police-academy-1.jpg" alt="Yousef at the Police Academy Coexistence Week" loading="lazy">
+          <img src="ev-police-academy-2.jpg" alt="Police Academy emblem" loading="lazy">
+          <img src="ev-police-academy-4.jpg" alt="Coexistence Week group photo" loading="lazy">
+        </div>
+        <div class="event-body">
+          <p class="event-date">Shared May 2026</p>
+          <h3 class="event-name">Coexistence Week at the Police Academy</h3>
+          <p class="event-blurb">A week-long student program at the Police Academy through EELU: horse riding, self-defense, fitness training and awareness sessions on discipline and teamwork.</p>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-photos">
+          <img src="ev-instant-1.jpg" alt="Instant Software Solutions event" loading="lazy">
+          <img src="ev-instant-2.jpg" alt="Instant Software Solutions event" loading="lazy">
+          <img src="ev-instant-3.jpg" alt="Instant Software Solutions event" loading="lazy">
+          <img src="ev-instant-4.jpg" alt="Instant Software Solutions event" loading="lazy">
+        </div>
+        <div class="event-body">
+          <p class="event-date">December 2025</p>
+          <h3 class="event-name">Tech and Content Creators Event</h3>
+          <p class="event-blurb">An event organized by Instant Software Solutions bringing together technology and content figures, with talks from Osama Elzero, Ghareeb Elshaikh and Mohamed Fathy.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <h3 class="col-title">Let's Connect</h3>
+        <p>Want to talk about a project, a collaboration or anything front-end? Send me a message and I'll get back to you.</p>
+      </div>
+      <div class="contact-cards">
+        <a class="contact-card" href="mailto:yoseftamer206@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">yoseftamer206@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://github.com/Yosef-Tamer206" target="_blank" rel="noreferrer">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/Yosef-Tamer206</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/yousef-tamer-1053a6395" target="_blank" rel="noreferrer">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">yousef-tamer</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Yousef Tamer. Built with HTML, CSS and JavaScript.</p>
+</footer>
+
+<script src="images1.js"></script>
+<script src="images2.js"></script>
+<script src="images3.js"></script>
+<script src="images4.js"></script>
+<script src="images5.js"></script>
+<script src="images6.js"></script>
+<script src="images7.js"></script>
+<script src="images8.js"></script>
+<script src="images9.js"></script>
+<script src="images10.js"></script>
+<script src="images11.js"></script>
+<script src="images12.js"></script>
+<script src="images13.js"></script>
+<script src="images14.js"></script>
+<script src="images15.js"></script>
+<script>
+(function(){
+  function fix(img){var s=img.getAttribute('src');if(s&&window.PIMG&&window.PIMG[s])img.src=window.PIMG[s];}
+  function scan(root){if(root.querySelectorAll)Array.prototype.forEach.call(root.querySelectorAll('img'),fix);}
+  new MutationObserver(function(muts){muts.forEach(function(m){
+    Array.prototype.forEach.call(m.addedNodes,function(n){if(n.nodeType!==1)return;if(n.tagName==='IMG')fix(n);scan(n);});
+    if(m.type==='attributes')fix(m.target);
+  });}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['src']});
+  document.addEventListener('DOMContentLoaded',function(){scan(document);});
+})();
+</script>
+<script src="app.js"></script>
+</body>
 </html>
